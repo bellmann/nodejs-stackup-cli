@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-stackup-cli",
+  "version": "0.0.1",
+  "description": "A simple CLI implementation of pcb-stackup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bellmann/nodejs-stackup-cli.git"
+  },
+  "keywords": [
+    "pcb",
+    "stackup"
+  ],
+  "author": "Bellmann B.V.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bellmann/nodejs-stackup-cli/issues"
+  },
+  "homepage": "https://github.com/bellmann/nodejs-stackup-cli#readme",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "pcb-stackup": "^3.0.0",
+    "unzip": "^0.1.11"
+  }
+}
