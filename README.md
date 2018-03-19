@@ -8,7 +8,7 @@ Usage:
 node index.js <gerbers.zip>
 ```
 
-This generates two lines of output:
+This generates the following output:
 
 ```
 { board_width: '59.70', board_length: '38.10', board_layers: 2 }
