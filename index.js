@@ -9,9 +9,7 @@ var unzip   = require('unzip');
 
 // A function to list all files in a path
 const listFilesInPath = (dir, filelist) => {
-  var path = path || require('path');
-  var fs = fs || require('fs'),
-      files = fs.readdirSync(dir);
+  var files = fs.readdirSync(dir);
   filelist = filelist || [];
   files.forEach(function(file) {
     if (fs.statSync(path.join(dir, file)).isDirectory()) {
