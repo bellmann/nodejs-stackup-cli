@@ -69,8 +69,8 @@ const main = (filename, output) => {
         }
 
         const board = {
-          'board_width': stackup.top.width,
-          'board_length': stackup.top.height,
+          'board_width': board_width.toFixed(2),
+          'board_length': board_length.toFixed(2),
           'board_layers': countLayers(stackup.layers, ['icu', 'bcu', 'tcu'])
         }
 

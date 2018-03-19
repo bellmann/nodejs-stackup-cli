@@ -11,7 +11,7 @@ node index.js <gerbers.zip>
 This generates two lines of output:
 
 ```
-{ board_width: 2.3504, board_length: 1.5, board_layers: 2 }
+{ board_width: '59.70', board_length: '38.10', board_layers: 2 }
 All done.
 ```
 
