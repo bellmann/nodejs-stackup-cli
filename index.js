@@ -88,7 +88,6 @@ const main = (filename, output) => {
   .then(() => {
     // Upload files
     // Save entry in database
-    console.log('All done.');
   })
   .catch(error => {
     console.error(error);
