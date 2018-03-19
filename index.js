@@ -23,10 +23,10 @@ const listFilesInPath = (dir, filelist) => {
 }
 
 // A function to count the layers of a specific type
-const countLayers = (layers, type) => {
+const countLayers = (layers, types) => {
   var count = 0;
   layers.forEach(layer => {
-    if (layer.type == type) {
+    if (types.indexOf(layer.type) > -1) {
       count++;
     }
   })
@@ -71,7 +71,7 @@ const main = (filename, output) => {
         const board = {
           'board_width': stackup.top.width,
           'board_length': stackup.top.height,
-          'board_layers': countLayers(stackup.layers, 'icu')
+          'board_layers': countLayers(stackup.layers, ['icu', 'bcu', 'tcu'])
         }
 
         console.dir(board);
